@@ -56,7 +56,50 @@ yarn build
 
 - Responsive form for entering flight search criteria
 - Dynamic flight results component
+- Styled with Material UI for a modern UI
+- Axios for handling API requests
 - Fast development experience with Vite
+
+## 🎨 UI Framework
+
+This project uses **Material UI** for styling components. To customize themes or components, refer to the [MUI documentation](https://mui.com/material-ui/getting-started/overview/).
+
+Install MUI:
+
+```bash
+npm install @mui/material @emotion/react @emotion/styled
+```
+
+## 🔌 API Requests with Axios
+
+Axios is used to fetch flight data from external APIs.
+
+Install Axios:
+
+```bash
+npm install axios
+```
+
+### Example API Usage
+
+```js
+import axios from 'axios';
+
+const fetchFlights = async () => {
+  try {
+    const response = await axios.get('https://api.example.com/flights', {
+      params: {
+        origin: 'NYC',
+        destination: 'LAX',
+        date: '2025-05-01'
+      }
+    });
+    console.log(response.data);
+  } catch (error) {
+    console.error('Error fetching flights:', error);
+  }
+};
+```
 
 ## 🌐 API Details
 
@@ -93,6 +136,8 @@ GET https://sky-scrapper.p.rapidapi.com/api/v1/flights/searchFlights?originSkyId
 - React
 - React DOM
 - Vite
+- Material UI
+- Axios
 
 ## 🧪 Linting
 
