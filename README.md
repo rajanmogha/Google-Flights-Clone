@@ -1,5 +1,5 @@
 
-# ✈️ Flight Finder App
+# ✈️ Google Flights Clone App
 
 A simple React-based application for searching and displaying flight results. Built with [Vite](https://vitejs.dev/) for fast development and optimized builds.
 
